@@ -1,0 +1,99 @@
+ls 
+ls -l
+ls -l /Users
+pwd 
+Cd
+Mkdir
+Mkdir -p first/second/third
+Mkdir -m a=rwx first
+Touch first.txt second.txt third.txt
+Touch first
+cp a.txt b.txt
+cp a.txt b.txt new_directory
+cp -R old_directory new_directory
+cp -i a.txt b.txt
+cp *.txt DevOps
+mv a.txt b.txt
+mv b.txt new_directory
+mv a.txt b.txt c.txt devops_directory
+mv new_directory hello_directory
+mv -i this_directory hello_directory
+mv -f this_directory hello_directory
+rm a.txt
+rm b.txt c.txt d.txt
+rm -i a.txt
+rm -r hello_directory
+rm -r *
+rm -- -file.txt
+rmdir HELLO DEVOPS TESTING
+rmdir -p 1stDirectory/2ndDirectory/3rdDirectory
+cat a.txt
+cat a.txt b.txt
+cat -n a.txt
+cat > a.txt
+cat a.txt > b.txt
+cat a.txt >> b.txt
+cat a.txt b.txt c.txt > new_file.txt
+cat >> a.txt
+grep -i "UNix" a.txt
+grep -c "unix" a.txt
+grep -l "unix" * || grep -l "unix" a.txt b.txt c.txt d.txt
+grep -w "unix" a.txt
+grep -n "unix" a.txt
+grep -A1 learn a.txt
+grep -B1 learn a.txt
+ grep -iR simple Projects/DevOpsTraining
+chmod u+rwx a.txt
+chmod go-w hello.txt
+chmod u+rwx,go+r hello.txt
+chmod 674 hello.txt
+chmod 777 hello.txt
+chmod 755 a.txt
+sudo
+su - abusufyan
+ps 
+ps -A
+ps -p 93814
+kill -9 93814
+chown abusufyan hello.txt
+chown :Testing linux.txt
+chown abusufyan:Testing yum.txt
+chown -f :Testing linux.txt
+chown -f devops:Testing hello.txt sample.txt yum.txt
+ssh abusufyan@10.143.90.2
+ssh -i rbm-staging.pem ubuntu@10.900.100.00
+scp hello.txt  ubuntu@10.900.100.00:/home/user
+scp  ubuntu@10.900.100.00:/home/user/hello.txt
+scp -P 2222 hello.txt  ubuntu@10.900.100.00:/home/user
+scp -r view.erb ubuntu@10.900.100.00:/home/
+wget https://practice.geeksforgeeks.org/jobs
+wget –recursive https://practice.geeksforgeeks.org/jobs
+tar cf file.tar hello.txt
+tar cvf file.tar *.txt
+tar xvf file.tar
+tar cvzf file.tar.gz *.txt
+tar xvzf file.tar.gz
+tar cvfj file.tar.tbz *.txt
+tar xvfj file.tar
+ifconfig
+ifconfig -a
+ifconfig -v
+ping www.geeksforgeeks.org
+ping -c 5 www.geeksforgeeks.org
+ping -s 40 -c 5 www.geeksforgeeks.org
+ping -i 2 www.geeksforgeeks.org
+ping -c 5 -q www.geeksforgeeks.org
+traceroute google.com
+df 
+df -h
+du 
+du -h
+du -a
+du -s
+stat 
+stat file.txt || file.tar
+history | grep df
+!! (to see most recent command)
+history -c
+history -d
+history | tail
